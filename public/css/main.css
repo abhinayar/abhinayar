@@ -468,6 +468,11 @@ body {
         float: none;
     }
     
+    .about .image .image-container {
+        padding-top: 0px;
+        margin-top: -75px;
+    }
+    
     /* portfolio */
     .portfolio-desc .desc p {
         width: 80%;
@@ -540,6 +545,11 @@ body {
         float: none;
     }
     
+    .about .image .image-container {
+        padding-top: 0px;
+        margin-top: -75px;
+    }
+    
     /* portfolio */
     .portfolio-desc .desc p {
         width: 80%;
@@ -578,21 +588,6 @@ body {
         width: 100%;
     }
 }
-
-@media (min-width: 768px) {
-    .about .image .image-container {
-        padding-top: 0px;
-        margin-top: -75px;
-    }
-}
-
-@media (min-width: 992px) {
-    .about .image .image-container {
-        padding-top: 75px;
-        margin-top: 0px;
-    }
-}
-
 
 
 
