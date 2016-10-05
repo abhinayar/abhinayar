@@ -436,7 +436,7 @@ body {
 @media (max-width: 992px) {
     /* landing */
     .introduction .intro-arrow {
-        margin-bottom: 10%;
+        padding-bottom: 10%;
     }
     
     /* about */
@@ -475,7 +475,7 @@ body {
     }
     
     .intro-arrow {
-        margin-bottom: 17%;
+        padding-bottom: 17%;
     }
     
     .about-text .image {
@@ -552,7 +552,7 @@ body {
     }
     
     .intro-arrow {
-        margin-bottom: 17%;
+        padding-bottom: 17%;
     }
     
     .about-text .image {
