@@ -1,4 +1,4 @@
-/* CS for AbhiNayar.com */
+/* CSS for AbhiNayar.com */
 
 /* Colors */
 /**********/
@@ -38,6 +38,22 @@ Montserrat Light: Writing
 body {
     background: #000;
     overflow-x: hidden;
+}
+
+.light {
+    font-family: 'MSLight', Montserrat, sans-serif;
+}
+
+.thin {
+    font-family: 'MSThin', Montserrat, sans-serif;
+}
+
+.normal {
+    font-family: 'MS', Montserrat, sans-serif;
+}
+
+.bold {
+    font-family: 'MSBold', Montserrat, sans-serif;
 }
 
 .lowercase {
@@ -123,7 +139,6 @@ body {
 
 .landing-title {
     text-transform: lowercase;
-    font-family: 'MSBold';
     font-weight: 700;
 }
 
@@ -137,13 +152,12 @@ body {
 
 .intro-desc {
     font-size: 32px;
-    font-family: 'MSThin', Montserrat, sans-serif;
 }
 
 .intro-arrow {
     width: 65px;
     margin: 0 auto;
-    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
 
 .landing-title {
@@ -253,7 +267,7 @@ body {
 }
 
 .portfolio-desc .desc, .portfolio-desc .top-link a {
-    font-family: 'MSThin';
+    font-family: 'MSLight';
 }
 
 .portfolio-desc .desc p {
@@ -310,7 +324,7 @@ body {
     display: inline;
     color: #fff;
     font-size: 22px;
-    font-family: 'MSThin', 'Montserrat', sans-serif;
+    font-family: 'MSLight', 'Montserrat', sans-serif;
     padding: 0 25px;
     cursor: pointer;
 }
@@ -342,11 +356,12 @@ body {
 .showcase .item .bgItem {
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     min-width: 100%;
     min-height: 100%;
 
     -webkit-background-size: cover
+    -webkit-background-repeat: no-repeat;
     -webkit-transition: all 0.15s ease; /* Safari and Chrome */
     -moz-transition: all 0.15s ease; /* Firefox */
     -ms-transition: all 0.15s ease; /* IE 9 */
