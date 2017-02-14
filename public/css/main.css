@@ -1,4 +1,4 @@
-/* CS for AbhiNayar.com */
+/* CSS for AbhiNayar.com */
 
 /* Colors */
 /**********/
@@ -38,6 +38,22 @@ Montserrat Light: Writing
 body {
     background: #000;
     overflow-x: hidden;
+}
+
+.light {
+    font-family: 'MSLight', Montserrat, sans-serif;
+}
+
+.thin {
+    font-family: 'MSThin', Montserrat, sans-serif;
+}
+
+.normal {
+    font-family: 'MS', Montserrat, sans-serif;
+}
+
+.bold {
+    font-family: 'MSBold', Montserrat, sans-serif;
 }
 
 .lowercase {
@@ -123,7 +139,6 @@ body {
 
 .landing-title {
     text-transform: lowercase;
-    font-family: 'MSBold';
     font-weight: 700;
 }
 
@@ -137,13 +152,12 @@ body {
 
 .intro-desc {
     font-size: 32px;
-    font-family: 'MSThin', Montserrat, sans-serif;
 }
 
 .intro-arrow {
     width: 65px;
     margin: 0 auto;
-    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
 
 .landing-title {
@@ -253,11 +267,11 @@ body {
 }
 
 .portfolio-desc .desc, .portfolio-desc .top-link a {
-    font-family: 'MSThin';
+    font-family: 'MSLight';
 }
 
 .portfolio-desc .desc p {
-    width: 75%;
+    width: 80%;
 }
 
 .portfolio-desc .top-link a {
@@ -310,7 +324,7 @@ body {
     display: inline;
     color: #fff;
     font-size: 22px;
-    font-family: 'MSThin', 'Montserrat', sans-serif;
+    font-family: 'MSLight', 'Montserrat', sans-serif;
     padding: 0 25px;
     cursor: pointer;
 }
@@ -342,11 +356,12 @@ body {
 .showcase .item .bgItem {
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     min-width: 100%;
     min-height: 100%;
 
     -webkit-background-size: cover
+    -webkit-background-repeat: no-repeat;
     -webkit-transition: all 0.15s ease; /* Safari and Chrome */
     -moz-transition: all 0.15s ease; /* Firefox */
     -ms-transition: all 0.15s ease; /* IE 9 */
@@ -374,6 +389,134 @@ body {
 
 .portfolio-links .link.active {
     color: #ff5800;
+}
+
+@media (max-width: 1200px) {
+    /* about */
+    .about-text .desc-heading {
+        max-width: 100%;
+    }
+    
+    .about .links {
+        margin-bottom: 40px;    
+    }
+    
+    .about .image {
+        margin-top: 131px;
+    }
+    
+    .about .image img{
+        margin-left: 30px;
+    }
+    
+    /* portfolio */
+    .portfolio-desc .desc p {
+        width: 90%;
+    }
+    
+    .showcase {
+        width: 90%;
+    }
+    
+    .showcase .item:hover .bgItem {
+        -webkit-transform:scale(1.05); /* Safari and Chrome */
+        -moz-transform:scale(1.05); /* Firefox */
+        -ms-transform:scale(1.05); /* IE 9 */
+        -o-transform:scale(1.05); /* Opera */
+         transform:scale(1.05);
+
+        -webkit-transition: all 0.25s ease; /* Safari and Chrome */
+        -moz-transition: all 0.25s ease; /* Firefox */
+        -ms-transition: all 0.25s ease; /* IE 9 */
+        -o-transition: all 0.25s ease; /* Opera */
+        transition: all 0.25s ease;
+    }
+}
+
+@media (max-width: 992px) {
+    /* landing */
+    .introduction .intro-arrow {
+        padding-bottom: 10%;
+    }
+    
+    /* about */
+    .about-text .desc-heading {
+        max-width: 75%;
+    }
+    
+    /* portfolio */
+    .showcase {
+        width: 90%;
+    }
+    
+    .showcase .item {
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* landing */
+    .intro {
+        font-size: 90px;
+    }
+    
+    .intro-large {
+        font-size: 130px;
+    }
+    
+    .intro-desc {
+        font-size: 28px;
+    }
+    
+    /* about */
+    .about-text .desc {
+        float: none;
+        display: inline-block;
+    }
+    
+    .intro-arrow {
+        padding-bottom: 17%;
+    }
+    
+    .about-text .image {
+        display: inline-block;
+        float: none;
+    }
+    
+    .about .image .image-container {
+        padding-top: 0px;
+        margin-top: -75px;
+    }
+    
+    /* portfolio */
+    .portfolio-desc .desc p {
+        width: 80%;
+    }
+    
+    .portfolio-links .links li.link {
+        padding: 0 10px;
+    }
+    
+    .showcase {
+        width: 120%;
+        margin-left: -10%;
+    }
+    
+    .showcase .item {
+        height: 360px;
+        border-radius: 0px !important;
+    }
+    
+    .showcase .item:hover .bgItem {
+        transform: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .showcase .item {
+        height: 320px;
+        border-radius: 0px !important;
+    }
 }
 
 @media (max-width: 540px) {
@@ -409,12 +552,17 @@ body {
     }
     
     .intro-arrow {
-        margin-bottom: 17%;
+        padding-bottom: 17%;
     }
     
     .about-text .image {
         display: inline-block;
         float: none;
+    }
+    
+    .about .image .image-container {
+        padding-top: 0px;
+        margin-top: -75px;
     }
     
     /* portfolio */
@@ -455,132 +603,6 @@ body {
         width: 100%;
     }
 }
-
-@media (max-width: 768px) {
-    /* landing */
-    .intro {
-        font-size: 90px;
-    }
-    
-    .intro-large {
-        font-size: 130px;
-    }
-    
-    .intro-desc {
-        font-size: 28px;
-    }
-    
-    /* about */
-    .about-text .desc {
-        float: none;
-        display: inline-block;
-    }
-    
-    .intro-arrow {
-        margin-bottom: 17%;
-    }
-    
-    .about-text .image {
-        display: inline-block;
-        float: none;
-    }
-    
-    /* portfolio */
-    .portfolio-desc .desc p {
-        width: 80%;
-    }
-    
-    .portfolio-links .links li.link {
-        padding: 0 10px;
-    }
-    
-    .showcase {
-        width: 120%;
-        margin-left: -10%;
-    }
-    
-    .showcase .item {
-        height: 360px;
-        border-radius: 0px !important;
-    }
-    
-    .showcase .item:hover .bgItem {
-        transform: none;
-    }
-}
-
-@media (max-width: 650px) {
-    .showcase .item {
-        height: 320px;
-        border-radius: 0px !important;
-    }
-}
-
-@media (max-width: 992px) {
-    /* landing */
-    .introduction .intro-arrow {
-        margin-bottom: 10%;
-    }
-    
-    /* about */
-    .about-text .desc-heading {
-        max-width: 75%;
-    }
-    
-    /* portfolio */
-    .showcase {
-        width: 90%;
-    }
-    
-    .showcase .item {
-        height: 320px;
-    }
-}
-
-@media (max-width: 1200px) {
-    /* about */
-    .about-text .desc-heading {
-        max-width: 100%;
-    }
-    
-    .about .links {
-        margin-bottom: 40px;    
-    }
-    
-    .about .image {
-        min-height: 100%;
-        margin-top: 131px;
-    }
-    
-    .about .image img{
-        margin-left: 30px;
-    }
-    
-    /* portfolio */
-    .portfolio-desc .desc p {
-        width: 90%;
-    }
-    
-    .showcase {
-        width: 90%;
-    }
-    
-    .showcase .item:hover .bgItem {
-        -webkit-transform:scale(1.05); /* Safari and Chrome */
-        -moz-transform:scale(1.05); /* Firefox */
-        -ms-transform:scale(1.05); /* IE 9 */
-        -o-transform:scale(1.05); /* Opera */
-         transform:scale(1.05);
-
-        -webkit-transition: all 0.25s ease; /* Safari and Chrome */
-        -moz-transition: all 0.25s ease; /* Firefox */
-        -ms-transition: all 0.25s ease; /* IE 9 */
-        -o-transition: all 0.25s ease; /* Opera */
-        transition: all 0.25s ease;
-    }
-}
-
-
 
 
 
